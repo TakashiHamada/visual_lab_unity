@@ -5,7 +5,7 @@ public class GhostSkin : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<Renderer>().material.color = new Color(0f,0f,0f,1f);
+		GetComponent<Renderer>().material.color = new Color(1f,1f,1f,1f);
 	}
 	
 	// Update is called once per frame
@@ -19,7 +19,7 @@ public class GhostSkin : MonoBehaviour {
 	
 	private void StrongerSkin() {
 		if(GetComponent<Renderer>().material.color.a > 1f) return;
-		GetComponent<Renderer>().material.color += new Color(0f,0f,0f,0.1f);
+		GetComponent<Renderer>().material.color = new Color(1f,1f,1f,1f);
 	}
 	
 	private void WeakenSkin() {

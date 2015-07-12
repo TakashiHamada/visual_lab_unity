@@ -5,8 +5,8 @@ public class PaveTiles : MonoBehaviour {
 	
 	public GameObject paveObject;
 	
-	private float xSize = 10;
-	private float zSize = 5;
+	private float xSize = 30;
+	private float zSize = 20;
 	private float interval = 1f;
 
 	// Use this for initialization
