@@ -14,7 +14,7 @@ Flower.prototype.spread = function () {
     this.x += noise * 200 - 100;
 
 
-    if (noise < 0.42) {
+    if (noise < 0.44) {
 
         P.stroke(P.color(0, 0, 80));
         P.fill(P.color(0, 0, 0, noise));
@@ -54,7 +54,7 @@ Flower.prototype.spread = function () {
         //            
         //        }
     }
-    
+
 
 
     if (noise > 0.5) {
@@ -77,47 +77,81 @@ Flower.prototype.spread = function () {
         P.noStroke();
         P.fill(P.color(00, 100, 100));
         P.ellipse(this.x, this.y, 4, 4);
-        
-        
-        
+
+
+
         for (var radian = 0; radian < Math.PI * 2; radian += (step * 8)) {
 
 
 
-        var radius = noise * 600 - 300;
+            var radius = noise * 600 - 300;
 
-        var target_x = this.x + Math.sin(radian) * radius;
+            var target_x = this.x + Math.sin(radian) * radius;
 
-        var target_y = this.y + Math.cos(radian) * radius;
-
-
-
-        P.strokeWeight(0.8);
-        P.stroke(P.color(0, 0, 100, 0.4));
-        P.line(this.x, this.y, target_x, target_y);
+            var target_y = this.y + Math.cos(radian) * radius;
 
 
 
-        //        if(radius < 8){
-        //            
-        //            P.stroke(P.color(60,100,100,0.01));
-        ////            P.strokeWeight(0.2);
-        //            P.noFill();
-        //            P.strokeWeight(1);
-        //            P.rect(this.x-15,this.y-15,30,30);
-        //            
-        //        }
+            P.strokeWeight(0.8);
+            P.stroke(P.color(0, 0, 100, 0.4));
+            P.line(this.x, this.y, target_x, target_y);
+
+
+
+            //        if(radius < 8){
+            //            
+            //            P.stroke(P.color(60,100,100,0.01));
+            ////            P.strokeWeight(0.2);
+            //            P.noFill();
+            //            P.strokeWeight(1);
+            //            P.rect(this.x-15,this.y-15,30,30);
+            //            
+            //        }
+        }
+
     }
 
+    if (noise > 0.550) {
+
+
+        for (var radian = 0; radian < Math.PI * 2; radian += (step * 8)) {
+
+
+
+            var radius = noise * 600 - 300;
+
+            var target_x = this.x + Math.sin(radian) * radius;
+
+            var target_y = this.y + Math.cos(radian) * radius;
+
+
+
+            P.strokeWeight(0.8);
+            P.stroke(P.color(10, 100, 60, noise* 0.8));
+            P.line(this.x, this.y, target_x, target_y);
+
+
+
+            //        if(radius < 8){
+            //            
+            //            P.stroke(P.color(60,100,100,0.01));
+            ////            P.strokeWeight(0.2);
+            //            P.noFill();
+            //            P.strokeWeight(1);
+            //            P.rect(this.x-15,this.y-15,30,30);
+            //            
+            //        }
+        }
+
     }
-    
-    if (noise > 0.54) {
-        
+
+    if (noise > 0.534) {
+
         P.noFill();
         P.strokeWeight(0.8);
         P.stroke(P.color(0, 0, 100, 0.8));
-        P.ellipse(this.x,this.y,22,22);
-        
+        P.ellipse(this.x, this.y, 22, 22);
+
     }
 
 }

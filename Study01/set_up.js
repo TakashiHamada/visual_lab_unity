@@ -14,10 +14,10 @@ function sketchProc(prosessing) {
         //        P.background(P.color(0));
         P.background(P.color(4, 90, 90));
         //        P.background(H.palette());
-        P.size(900, 600);
+        P.size(1200, 800);
 
         //        new PixelManager(150);
-                new CellManager(24,19);
+                new CellManager(36,29);
 
         //        var row = 5;
         //        var column = 5;
