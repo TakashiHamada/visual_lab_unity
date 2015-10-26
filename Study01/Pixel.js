@@ -11,9 +11,10 @@ Pixel.prototype.showBody = function () {
     
 //    console.log(P.noise(this.x,this.y) * 360 - 180);
     
-    var color = P.color(P.noise(this.x,this.y) * 360,100,100,0.4);
+    var color = P.color(0,100,P.noise(this.x,this.y) * 100 +50,1);
     P.fill(color);
-    var radius = P.noise(this.x,this.y) * 50;
+//    var radius = P.noise(this.x,this.y) * 50;
+    var radius = 1;
     P.ellipse(this.x, this.y, radius, radius);
     
     this.radius = radius;

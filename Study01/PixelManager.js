@@ -7,7 +7,7 @@ var PixelManager = function (mount) {
         for(var column = 0; column < P.width; column++){
             
         var pixel = new Pixel(P.random(P.width),P.random(P.height));
-        pixel.showBody();
+//        pixel.showBody();
         self.pixels.push(pixel);
         }
     }
@@ -18,7 +18,7 @@ var PixelManager = function (mount) {
     });
     
     _.each(self.pixels,function(pixel){
-        if(pixel.radius > 32) pixel.showLinks(self.pixels);
+//        if(pixel.radius > 32) pixel.showLinks(self.pixels);
         
     });
 }

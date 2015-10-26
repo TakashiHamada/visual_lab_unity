@@ -9,10 +9,11 @@ function sketchProc(prosessing) {
     }
 
     function createFiled() {
-        P.background(0, 100, 100,1);
-        P.size(200, 200);
+        P.background(0, 0, 100,1);
+        P.size(400, 400);
 
-        new PixelManager(150);
+//        new PixelManager(150);
+        new CellManager(40,40);
     }
 }
 
