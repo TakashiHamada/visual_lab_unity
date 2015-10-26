@@ -10,9 +10,9 @@ function sketchProc(prosessing) {
 
     function createFiled() {
         P.background(0, 100, 100,1);
-        P.size(400, 400);
+        P.size(200, 200);
 
-        new BallManager(150);
+        new PixelManager(150);
     }
 }
 
